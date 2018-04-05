@@ -1,15 +1,13 @@
+.App {
+  padding: 20px;
+}
 .App-header {
   padding: 20px;
   color: #222;
   text-align: center;
 }
-.jobList {
-  width: 49%;
-  float: left;
-  border: solid 1px;
-}
-.renderFrame {
-  width: 50%;
-  float: right;
-  border: solid 1px;
+
+li {
+  list-style: none;
+  padding: 5px 10px 5px 0px;
 }
