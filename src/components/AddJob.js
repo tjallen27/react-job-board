@@ -22,6 +22,7 @@ class AddJob extends Component {
         salary: this.refs.salary.value
       }}, function(){
         console.log(this.state);
+        this.props.addJob(this.state.newJob);
       });
     }
     e.preventDefault();

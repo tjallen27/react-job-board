@@ -28,11 +28,15 @@ class App extends Component {
     ]});
   }
 
+  handleAddJob(job){
+    
+  }
+
   render() {
     return (
       <div className="App">
         <Header />
-        <AddJob />
+        <AddJob addJob={this.handleAddJob.bind(this)}/>
         <Jobs jobs={this.state.jobs}/>
       </div>
     );
