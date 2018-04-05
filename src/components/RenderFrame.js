@@ -1,16 +1,19 @@
 import React, { Component } from 'react';
 
 export default class RenderFrame extends Component {
-  getInitialState(){
-    return { jobName: 'Job Name', jobDescription: 'Job Description', jobSalary: '' };
+  getDeafaultProps(){
+    return {
+      jobName: 'Job Name',
+      jobDescription: 'Job Description', jobSalary: '20000'
+    };
   };
 
   render(){
     return (
         <ul>
-          <li>{this.jobName}</li>
-          <li>{this.jobDescription}</li>
-          <li>{this.jobSalary}</li>
+          <li>{this.props.jobName}</li>
+          <li>{this.props.jobDescription}</li>
+          <li>{this.props.jobSalary}</li>
         </ul>
     )
   }
