@@ -4,3 +4,13 @@
   color: white;
   text-align: center;
 }
+.jobList {
+  width: 50%;
+  float: left;
+  border: solid 1px;
+}
+.renderFrame {
+  width: 50%;
+  float: right;
+  border: solid 1px;
+}
