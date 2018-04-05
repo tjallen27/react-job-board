@@ -29,7 +29,9 @@ class App extends Component {
   }
 
   handleAddJob(job){
-    
+    let jobs = this.state.jobs;
+    jobs.push(job);
+    this.setState({jobs:jobs});
   }
 
   render() {
