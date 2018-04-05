@@ -4,7 +4,7 @@ class JobItem extends Component {
   render(){
     console.log(this.props)
     return (
-      <li>{this.props.job.title}: {this.props.job.salary}</li>
+      <li><strong>{this.props.job.title}</strong>: £{this.props.job.salary}</li>
     );
   }
 }

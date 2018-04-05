@@ -8,17 +8,21 @@ class App extends Component {
   constructor(){
       super();
     this.state = {
-      jobs: [
-        {
-          title: 'Junior React Developer',
-          salary: '28000'
-        },
-        {
-          title: 'Junior Node Developer',
-          salary: '34000'
-        }
-      ]
+      jobs: []
     }
+  }
+
+  componentWillMount(){
+    this.setState({ jobs: [
+      {
+        title: 'Junior React Developer',
+        salary: '28000'
+      },
+      {
+        title: 'Junior Node Developer',
+        salary: '34000'
+      }
+    ]});
   }
 
   render() {
